@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    background-color: rgb(241, 225, 206);
+}
+
+#container{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+#mortgageForm{
+    margin: 2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: .3rem;
+    min-width: 35%;
+    min-height: 70vh;
+    background-color: rgb(204, 185, 164);
+}
+
+input{
+    width: 40%;
+    text-align: center;
+    height: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    font-weight: 600;
+    border-radius: 2px solid;
+}
+
+label{
+    font-size: 1.3rem;
+}
+
+button{
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+    font-weight: 600;
+    border: 2px solid;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+#result{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.yourLoan{
+    font-size: 2rem;
+
+}
+
+.month,
+.monthPay,
+.interest,
+.amort,
+.debt{
+    padding: .8rem;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.month,
+.interest,
+.debt{
+    background-color: rgb(204, 185, 164);
+}
+
+.monthPay,
+.amort{
+    background-color: rgb(243, 229, 214);
+}
+
+.monthrow,
+.interestrow,
+.debtrow{
+    background-color: rgb(226, 208, 188);
+}
+
+.monthPayrow,
+.amortrow{
+    background-color: rgb(247, 237, 227);
+}
+
+.monthrow,
+.interestrow,
+.debtrow,
+.monthPayrow,
+.amortrow{
+    padding: .5rem;
+    border-bottom: 2px solid;
+    font-weight: 600;
+    border-radius: 5px;
+}

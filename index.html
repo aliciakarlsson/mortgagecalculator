@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolånekalkyl</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="./js/index.js" defer></script>
+</head>
+<body>
+<div id="container">
+  <form id="mortgageForm">
+    <h1>Bolånekalkyl</h1>
+
+    <label for="loanAmount">Hur mycket vill du låna?</label>
+    <input type="number" min="0" max="10000000" placeholder="kr" id="loanAmount" required>
+
+    <label for="annualInterestRate">Årlig ränta</label>
+    <input type="number" min="0" max="10" placeholder="%" id="annualInterestRate" step="0.01" required>
+
+    <label for="loanYears">Återbetalningstid</label>
+    <input type="number" min="0" max="70" placeholder="år" id="loanYears" required>
+
+    <button type="submit">Beräkna</button>
+  </form>
+
+  <div id="result"></div>
+</div>
+</body>
+</html>
